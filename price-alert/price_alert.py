@@ -8,7 +8,6 @@ URL = 'https://www.emag.bg/konzola-microsoft-xbox-series-s-rrs-00010/pd/D547D2MB
 TARGET_PRICE = 600
 USER = ""
 PASSWORD = ""
-ITEM = 'INSTANT POD DUO'
 
 header = {
     "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
@@ -17,10 +16,10 @@ header = {
 
 response = requests.get(url=URL, headers=header)
 # print(response)
-amazon = response.text
+web_store = response.text
 
 
-soup = BeautifulSoup(amazon, 'lxml')
+soup = BeautifulSoup(web_store, 'lxml')
 # print(soup.prettify())
 
 title = soup.find(name='h1', class_='page-title').get_text()
