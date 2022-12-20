@@ -3,8 +3,8 @@ from selenium.webdriver.chrome.service import Service
 import smtplib
 
 WEB_URL = 'https://www.emag.bg/konzola-microsoft-xbox-series-s-rrs-00010/pd/D547D2MBM/'
-USER = "letov88@gmail.com"
-PASSWORD = "yftyvmugjhffvepk"
+USER = ""
+PASSWORD = ""
 TARGET_PRICE = 600
 ITEM = 'Microsoft Xbox Series S'
 
